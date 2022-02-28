@@ -10,7 +10,7 @@
 3- _what is the name of the feature tht makes **WCM** possible in Sitecore?_
 - Experience Management (xManagement)
 
-4- _Ture or False: The view should contain all the business logic_.
+4- _True or False: The view should contain all the business logic_.
 - False
 
 5- _In what order are these configuration files processed by default?_
@@ -23,7 +23,7 @@
 - Packages, customize, extend, reinstall & remove instances.
 
 8- _What happens when you set a field as shared? and un-versioned?_
-- A shared filed contains a single version of the data for all versions in all languages.
+- A shared filed contains a **single version** of the data for **all versions in all languages**.
 - An un-versioned field contains onver version of the data per language.
 
 9- _What to do to make sure your author can use the testing functionality?_
@@ -41,7 +41,7 @@
 - page scaffolding, like headers and footers.
 
 13- _What method do you use to retrieve item's URL?_
-- `LinkManger.GetItemUrl()`
+- `LinkManager.GetItemUrl()`
 
 14- _What type of settings can be applied to standard values?_
 - Default field values
@@ -102,7 +102,7 @@
 - one of the benefits of using Sitecore is the separation of content and presentaion. The Rich text field is the only exception to this, as it stores HTML content directly. If abused and not configured properly, it may give users the ability to break the design of the site.
 
 30- _You are retrieving a large number of items using `Axes.GetDescendants` What is a better alternative?_
-- Use `Sitecore.ContentSerach` API
+- Use `Sitecore.ContentSearch` API
 
 31- _What do facets allow you to do?_
 - Progressively apply filters (based on fields) to narrow down your result set
@@ -147,7 +147,7 @@
 - `Right-click -> Tasks -> Design Layout` or `CTRL + U`
 
 45- _What type of objects does the `GetChildren()` method return?_
-- `Sirecore.Collections.ChildList`
+- `Sitecore.Collections.ChildList`
 
 46- _How would you render a **Multilist** field?_
 - By retrieving its value in code and using it to create some output.
