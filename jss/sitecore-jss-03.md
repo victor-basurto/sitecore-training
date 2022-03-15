@@ -34,11 +34,45 @@
 
 New components are generated in:
 | File Location | Description |
-|:---:|---|
+|---:|---|
 | `/scripts/scaffold-component.js` | fully customizable, <br>Customizable Manifest  |
-| `/scripts/generate-component-factory.js` | Modified in case you want to match <br>Nested Components |
+| `/scripts/generate-component-factory.js` | Modify in case you want to match <br>Nested Components |
 | `/sitecore/definitions/components/OurNewComponent.sitecore.js` | Component Manifest |
 | `/src/components/OurNewComponent/index.js` | To access `Route-Level` Fields |
 
 ---
-**Add field to component manifest**
+### **Add field to component manifest**
+> _Adding fields to component manifest allow us to create component instances with different fields._
+
+The **Layout Service Placeholders** field defines the placeholders that will be used within the rendering in your Javascript component.
+It emits **field** data in two formats: **Value** and **Editable**
+- **Value**: 
+The **value** property of a field object contains the "raw" unrendered value of a filed stored in Sitecore.
+- **Editable**:
+The **editable** property of a field object contains the result of the `renderField` pipeline for the given field.
+```javascript
+export default function(manifest) {
+  manifest.addComponent({
+    name: 'OurNewComponent', // -> Component name
+    icon: SitecoreIcon.DocumentTag,
+    fields: [{ 
+		name: 'heading', // field name
+		type: CommonFieldTypes.SingleLineText // heading field as SingleLineText
+	}, {
+		name: 'description', // field name
+		type: CommonFieldTypes.RichText // description field as RichText
+	}], // add more fileds
+  });
+}
+```
+### **Define a Text String**
+Located under `~/data/routes/en.yml`
+After added new Component, add definitions into `en.yml` file. 
+<sub>Note: _Make sure it matches Component Manifest settings_</sub>
+```yaml
+- componentName: OurNewComponent //-> should match manifest component name
+  fields:
+	- heading: My Custom Heading
+	- description: My Custom Description
+```
+
