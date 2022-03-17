@@ -75,6 +75,7 @@ Each JSS app has one default route template, `routes.sitecore.js`
 > - Add fields to routes if you'll be doing a lot of filtering and searching.
 > - JSS import process will always generate a route template for each app.
 ---
+
 #### Steps to create a Route
 Adding a `addRouteType`
 1- VSCode navigate to **/sitecore/definitions/routes.sitecore.js** folder and then create a **routes** folder.
@@ -86,27 +87,28 @@ Adding a `addRouteType`
 - its how you add a route type with a name and fields
 - it can add inherited data.
 
-```
+```javascript
 import { CommonFieldTypes, Manifest } from '@sitecore-jss/sitecore-jss-manifest';
 
 export default function (manifest) {
-	manifest.addRouteType({
-		name: 'my-route-type',
-		displayName: 'My Route Type',
-		fields: [{
-			name: 'description',
-			type: CommonFieldTypes, RichText,
-			displayName: 'Description',
-			required: false,
-		}],
-	});
+  manifest.addRouteType({
+    name: 'my-route-type',
+    displayName: 'My Route Type',
+    fields: [{
+      name: 'description', // -> Make sure it matches Definition File
+      type: CommonFieldTypes, RichText,
+      displayName: 'Description',
+      required: false,
+    }],
+  });
 }
 ```
+
 Adding Template Property
 - **[Pagename]Route.sitecore.js** to add a template property
 - add the files that matches the route name, to tell JSS is a custom route.
 
-```
+```json
 {
 	"name": "route",
 	"template": "MyRoute",
@@ -115,6 +117,13 @@ Adding Template Property
 		// ...
 }
 ```
+
+Create New Route Folder under `/data/routes/` make sure it matches the _manifest file_ route[^3]. e.g. `/data/routes/my-route-type/`
+
+Create a new `YML` file under `/data/routes/my-route-type/` and name it: `en.yml
+
+
+
 
 > After first import to Sitecore, any existing route type data templates will remain unchanged until you:
 - Manually delete them.
@@ -131,4 +140,7 @@ How route items and the database are defined after JSS setup completes?
 - JSS setup creates a config file that generates the site definition.
 
 [^2]: Manifest definition file ned to have the **\*path.basename** as **\*.sitecore.js** for the following reasons: Sitecore file-naming convention. When manifest generation runs, it will only look to generate files that end with **sitecore.js**
+
+[^3]: Sitecore will translate the route name to a folder name. 
+e.g `my-route-type` will be translated to `https://www.my-sitecore-app.com/my-route-type/`
 
