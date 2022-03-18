@@ -61,3 +61,15 @@
 
 **True or false: Web development teams use SXA to reduce team size and eliminate the need for back-end Developers during the website production process.**
 - false
+
+**How would you define "page design"?**
+- A page design combines a set of partials designs, i.e., it logically connects components that make up the structure of a page.
+
+**Benefits of SXA Partial Design**
+- Partial designs are typically a group or set of components that make up a part of the page and can be created once, then used everywhere in the site.
+
+**True or false: With the structure of SXA, team members who may traditionally be involved during later stage of the build can work alongside their teammates throughout the projects lifecycle.**
+- True
+
+**How would you describe the necessity of doing custom components for a business's site with SXA?**
+- SXA often reduces the number of custom components that need to be built for a site.
