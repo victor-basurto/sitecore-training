@@ -18,17 +18,19 @@ Use to refine search results by categorizing the items returned by the search.F 
 | `Integer` | **Filter (**_Managed Range_**)**, **Filter (**_Range Slider_**)**, **Filter (**_Slider_**)**  |
 | `List` | **Filter (**_Checklist_**)**, **Filter (**_Dropdown_**)** |
 
-You can add facets to your site within the Content Editor by navigating to: `Sitecore/content/Tenant/Site/Settings/Facets/`
+You can add facets to your site within the Content Editor by navigating to: 
+`Sitecore/content/Tenant/Site/Settings/Facets/`
 
 ### Scopes
 ---
 Search scopes are used to limit the search results based on conditions. For example, to create a search scope for locating a store on the Lifestyle website, you have to narrow the search scope down to only items located in that specific part of the content tree.
 
-The search scopes are stored in the Settings folder of the respective site, i.e., `/sitecore/content/Tenant/Site/Settings/Scopes/`
+The search scopes are stored in the Settings folder of the respective site, i.e., 
+`/sitecore/content/Tenant/Site/Settings/Scopes/`
 
 ### Tokens
 ---
-Tokens are used in search queries to apply additional search filters. SXA comes with predefined tokens that you can quickly use to apply ==multiple== search filters
+Tokens are used in search queries to apply additional search filters. SXA comes with predefined tokens that you can quickly use to apply _multiple_ search filters
 
 ### Pagination
 ---
