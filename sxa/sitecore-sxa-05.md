@@ -8,7 +8,7 @@
 
 ### Facets
 ---
-Use to refine search results by categorizing the items returned by the search.F or example, if you build a search page for a blog, all blogs will contain fields such as author, date, and language. Based on these fields, you can create facets to allow visitors to use them as filters.
+Use to refine search results by categorizing the items returned by the search. For example, if you build a search page <br>for a blog, all blogs will contain fields such as author, date, and language. Based on these fields, you can create facets <br>to allow visitors to use them as filters.
 
 | Facets | Component |
 | --- | --- |
@@ -19,26 +19,30 @@ Use to refine search results by categorizing the items returned by the search.F 
 | `List` | **Filter (**_Checklist_**)**, **Filter (**_Dropdown_**)** |
 
 You can add facets to your site within the Content Editor by navigating to: 
-`Sitecore/content/Tenant/Site/Settings/Facets/`
+```sh
+Sitecore/content/Tenant/Site/Settings/Facets/
+```
 
 ### Scopes
 ---
-Search scopes are used to limit the search results based on conditions. For example, to create a search scope for locating a store on the Lifestyle website, you have to narrow the search scope down to only items located in that specific part of the content tree.
+Search scopes are used to limit the search results based on conditions. For example, to create a search scope for <br>locating a store on the Lifestyle website, you have to narrow the search scope down to only items located in that<br> specific part of the content tree.
 
 The search scopes are stored in the Settings folder of the respective site, i.e., 
-`/sitecore/content/Tenant/Site/Settings/Scopes/`
+```sh
+/sitecore/content/Tenant/Site/Settings/Scopes/
+```
 
 ### Tokens
 ---
-Tokens are used in search queries to apply additional search filters. SXA comes with predefined tokens that you can quickly use to apply _multiple_ search filters
+Tokens are used in search queries to apply additional search filters. SXA comes with predefined tokens that you can <br>quickly use to apply _multiple_ search filters
 
 ### Pagination
 ---
-Pagination is the process of splitting the contents of a website, or a section of contents from a website, into discrete pages. In SXA, the Pagination rendering allows you to add pagination to a Page List, Event List, and File List renderings, reflecting the number of pages and enabling you to navigate to a page directly or use additional buttons (First, Previous, Next, Last).
+Pagination is the process of splitting the contents of a website, or a section of contents from a website, into discrete <br>pages. In SXA, the Pagination rendering allows you to add pagination to a Page List, Event List, and File List renderings, <br>reflecting the number of pages and enabling you to navigate to a page directly or use additional buttons (First, <br>Previous, Next, Last).
 
 ### Search Box Rendering
 ---
-Used on webpages to allow visitors to search your website. By default, the Search Box rendering adds the search text box to the page. As an Administrator, you can create and customize search boxes for campaign pages by adjusting the Search Box rendering properties without the support of a developer.
+Used on webpages to allow visitors to search your website. By default, the Search Box rendering adds the search text <br>box to the page. As an Administrator, you can create and customize search boxes for campaign pages by adjusting <br>the Search Box rendering properties without the support of a developer.
 
 ### Search Results Rendering
 ---
@@ -46,33 +50,30 @@ Enables website visitors to view their search results by adding it to the respec
 
 ### Page Selector Rendering
 ---
-Using the Page Selector rendering, you can choose how to display the search results page. The default page size configured in the Search Results rendering determines the number of pages displayed. When using the Page Size rendering, remember to configure the page size in the Control Properties dialog box of the Page Size rendering.
-
-###
----
+Using the Page Selector rendering, you can choose how to display the search results page. The default page size <br>configured in the Search Results rendering determines the number of pages displayed. When using the Page Size <br>rendering, remember to configure the page size in the Control Properties dialog box of the Page Size rendering.
 
 ### Q&A
 ---
 **Used to apply multiple filters to configure the scope in search queries?**
 - Tokens
 
-**True or false: You will need to create custom components to create search interfaces when building your website with SXA.**
+**True or false: You will need to create custom components to create search interfaces when building your <br>website with SXA.**
 - False
 
 **Which of the following renderings would you use to help visitors view the search results within your website?**
 - Search Results Rendering
 
-**True or false: The default page size configured in the Search Results rendering determines the number of pages displayed.**
+**True or false: The default page size configured in the Search Results rendering determines the number of <br>pages displayed.**
 - True
 
-**Administrators use which of the following in search queries to apply predefined filters in a search solution on a particular webpage?**
+**Administrators use which of the following in search queries to apply predefined filters in a search solution <br>on a particular webpage?**
 - Tokens
 
-**True or false: The default page size configured in the Search Results rendering determines the number of pages displayed when a visitor performs a search function.**
+**True or false: The default page size configured in the Search Results rendering determines the number of <br>pages displayed when a visitor performs a search function.**
 - True
 
-**Which of the following are used by visitors to reduce the number of results to only those that will satisfy the user search criteria?**
+**Which of the following are used by visitors to reduce the number of results to only those that will satisfy the <br>user search criteria?**
 - Facets
 
-**The Search Results signature can be used to limit results by filtering them based on a unique _________ for specific search results.**
+**The Search Results signature can be used to limit results by filtering them based on a unique _________ for <br>specific search results.**
 - Signature
