@@ -17,6 +17,7 @@ Use to refine search results by categorizing the items returned by the search.F 
 | `Float` | **Filter (**_Managed Range_**)**, **Filter (**_Range Slider_**)**, **Filter (**_Slider_**)**  |
 | `Integer` | **Filter (**_Managed Range_**)**, **Filter (**_Range Slider_**)**, **Filter (**_Slider_**)**  |
 | `List` | **Filter (**_Checklist_**)**, **Filter (**_Dropdown_**)** |
+
 You can add facets to your site within the Content Editor by navigating to: `Sitecore/content/Tenant/Site/Settings/Facets/`
 
 ### Scopes
