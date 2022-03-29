@@ -37,7 +37,7 @@ Application Integration:
 - JSS Generates the necessary artifacts for Sitecore
 
 Application Scalability:
-- You can use CND's Proxies and Nodejs services to scale your application.
+- You can use CDN's Proxies and Nodejs services to scale your application.
 
 Cross Platform Support:
 - SDK support to deploy your app seamlessly on any platform that runs js server-side
@@ -74,7 +74,7 @@ Code-First Approach When:
 - Prototyping
 - No instance of Sitecore
 - Non-win OS
-- JS are Primarly Developers
+- JS are Primarily Developers
 - Simple app from Content Perspective
 - External Developers
 
@@ -94,7 +94,7 @@ Code-First Benefits:
 ---
 # Identify JSS Requirements
 **Explore JSS CLI**
-- JSS CLI is a nodejs commandline tool with development scripts, it allows you to:
+- JSS CLI is a nodejs command-line tool with development scripts, it allows you to:
 	- Create, Maintain and Run JS Applications
 	- Scaffold Components
 	- Deploy apps to Sitecore
@@ -108,23 +108,23 @@ Code-First Benefits:
 | `@sitecore-jss/sitecore-jss-cli ` | Package name of the JSS CLI |
 
 e.g. install JSS-CLI using Yarn
-```
+```sh
 $ npm install -g @sitecore-jss/sitecore-jss-cli
 ```
 
 to verify successful installation
-```
+```sh
 $ jss --help
 ```
 ---
 ## Create JSS Application
 `app-name` -> JSS Application Name
 `app-template-name` -> Angular, Vue, React, etc.
-```
+```sh
 $ jss create <app-name> <app-template-name>
 ```
 E.g. Create a JSS `my-first-app` in `vue`
-```
+```sh
 $ jss create my-first-app vue
 
 $ cd my-first-app

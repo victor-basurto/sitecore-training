@@ -51,9 +51,9 @@ The Layout Service - Presentation Layer that provides composition for data neede
 - Mock returns JSON
 
 > When connecting to JSS app to Sitecore:
-> - Currenty  no built-in toold into JSS SDK to retrieve and store Sitecore-connected Layout Service data as Files.
+> - Currently no built-in tool into JSS SDK to retrieve and store Sitecore-connected Layout Service data as Files.
 > - Save Layout Service data queried from Sitecore in a JSON file.
-> - Once you have that data disconnected you might consider building your own service layer to fetch "raw" Layout Service dataa from the JSON file(s) you saved.
+> - Once you have that data disconnected you might consider building your own service layer to fetch "raw" Layout Service data from the JSON file(s) you saved.
 
 ### Routes and Templates
 - Templates: you put a template with static component data in **data/component-content** folder of the sample library to share static component data.
@@ -61,7 +61,7 @@ To add components into multiple routes while reusing same data, put that compone
 
 | Routes | Templates |
 |---|---|
-| are items in a page that map, or correspond, to a route | do not have presnetation as they are arbitrary content.|
+| are items in a page that map, or correspond, to a route | do not have presentation as they are arbitrary content.|
 | Every file under `Routes` becomes a page |   |
 | are made from templates |  |
 

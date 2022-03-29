@@ -6,19 +6,19 @@
 **Sitecore Helix** is based on *modular architecture* or *package design*.
 *by [Robert C. Martin](http://staff.cs.utu.fi/~jounsmed/doos_06/material/DesignPrinciplesAndPatterns.pdf)*
 
-#### Sympthoms of Rotting Design
+#### Symptoms of Rotting Design
 - **Rigidity - Inflexibility**
 	- Software becomes difficult to change
 * **Fragility**
-	- Sofware tends to break in many places every time it is updated
-* **Inmobility**
+	- Software tends to break in many places every time it is updated
+* **Immobility**
 	- Software modules are too dependent on other modules and its rewritten instead of being reused
 * **Viscosity**
 	- Software become to hacky and looses its design or environment
 * **Changing Requirements**
 	- Changing the requirements tends to be more prone to change the initial design bit by bit as changes continues, the malignancy sets in.
 * **Dependency Management**
-	- lack of dependency management causes the software to degrade and becomes Rigid, Fragile, Inmovable and Viscous
+	- lack of dependency management causes the software to degrade and becomes Rigid, Fragile, Immovable and Viscous
 ----
 
 ## Principles of Object Oriented Design
@@ -47,15 +47,15 @@ _Every dependency in the design should target an **interface**, or an **abstract
 _Separate the interface from the implementation._
 If you have a class that has several clients, rather than loading the class with all the methods that the clients need, create specific interfaces for each client and multiply inherit them into the class
 
-### The Relase/Resuse Equivalence Principle (REP)
+### The Release/Reuse Equivalence Principle (REP)
 _The granule of reuse is the granule of release_
 A reusable element, be it a component, a class, or a cluster of classes, cannot be reused unless it is managed by a release system of some kind
 
 ### Common Closed Principle (CCP)
 _Classes that change together, belong together_
-The ability to group classes that change together to minimized the From-To Relase impact.
+The ability to group classes that change together to minimized the From-To Release impact.
 
-### Common Reshuse Principle (CRP)
+### Common Reuse Principle (CRP)
 _Classes that aren't reused together should not be grouped together_
 
 ### Stable Abstractions Principle (SAP)
@@ -70,7 +70,7 @@ Code Should depend in the direction of stability.
 | -----------------------------------------------	 	| ------------------------------------------------ |
 | What goes into a package and what stays out.			| how Packages (in Helix) should interact with each other |
 | Questions in relation to Package Cohesion 			| Questions in relation of Package Coupling 		|
-| - What defines a module? <br>- how do you make modules manageable? | - How do the modules connect? <br>- How do you control the depencies of your solution? |
+| - What defines a module? <br>- how do you make modules manageable? | - How do the modules connect? <br>- How do you control the dependencies of your solution? |
 </div>
 
 
@@ -119,14 +119,14 @@ A Sitecore solution based on the Helix principles will typically have its module
 ---
 ## Helix Terminology
 
-**Depency**
+**Dependency**
 - A dependency is a relationship between two modules.
 
 **Implementation**
-- An _"Implementation/Customper Implementation"_ is the total number of modules, features, and functionalities deployed to solve customer's business problem.
+- An _"Implementation/Customer Implementation"_ is the total number of modules, features, and functionalities deployed to solve customer's business problem.
 
 **Module**
-- A Module is a conceptual grouping of assets that relates to particular business requirement. A way to group all assets, vusiness logic and configuration, into a single unit.
+- A Module is a conceptual grouping of assets that relates to particular business requirement. A way to group all assets, business logic and configuration, into a single unit.
 
 **Solution**
 - Refers to _"Visual Studio Solution"_. also referred to as _"Implementation"_.
