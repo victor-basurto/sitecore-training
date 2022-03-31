@@ -173,3 +173,5 @@ Route-Level Fields Data...
 
 ## SXA
 ---
+What is SXA?
+  - Sitecore Experience Accelerator provides reusable, templated UX layouts and components.
