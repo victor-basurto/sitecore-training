@@ -174,4 +174,27 @@ Route-Level Fields Data...
 ## SXA
 ---
 What is SXA?
-  - Sitecore Experience Accelerator provides reusable, templated UX layouts and components.
+: Sitecore Experience Accelerator provides reusable, templated UX layouts and components.
+
+## TDS
+---
+What is TDS?
+: Team Development for Sitecore
+
+When building a solution, hwy might you utilize Team Development for Sitecore (TDS)?
+: To serialize your Sitecore items
+
+When inputting your TDS License key during TDS installation, the Company Name and License are Case sensitive?
+: True
+
+Why you should configure TDS Global config file?
+: To ensure settings you want configured across all projects are applied to all projects.
+
+As a Developer, why is it important to implement unit testing?
+: Unit testing allows you to refactor with confidence, and checks your code behaves as you intended.
+
+Why should you utilize Attach to Process in Visual Studio when working with Sitecore?
+: To ensure you are attaching to your Sitecore site.
+
+When using TDS for Serialization, it is recommended that you pull all Sitecore items into your project.
+: False
