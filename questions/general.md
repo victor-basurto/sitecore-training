@@ -204,7 +204,7 @@ When using TDS for Serialization, it is recommended that you pull all Sitecore i
 What is the name of Component Architecture guideline of Sitecore?
 : Helix
 
-What is Horizontal scaling and Vertical Scaling?
+What is Horizontal scaling and Vertical scaling?
 : - Vertical Scaling
     - Add Resources to a single node in a system.
   - Horizontal Scaling
@@ -213,7 +213,7 @@ What is Horizontal scaling and Vertical Scaling?
 Which databases is required for CD Server?
 : Web and Core
 
-What can be the reason `$token` is visible in one of the items as "`$token`" and not replace it with its value?
+What can be the reason `$token` is visible in one of the items as "`$token`" and not replaced it with its value?
 : `$token` will replace by value for new items, not the old ones.
 
 Which `DLL` is required to get `RenderingContext`?
@@ -229,7 +229,7 @@ Which tag use in `Layers.config` file to define the sequence of execution of con
 : `<loadOrder>`
 
 How to force the content editor to create similar kind items under article?
-: Insert Option
+: `Insert Option`
 
 Which roles access right will take precedence?
 : `Deny`
@@ -274,16 +274,16 @@ Why we set icons in Sitecore?
 What are the different types of Databases available in Sitecore?
 : Master, Core, Web
 
-Which editor is mainly designed for no technical Content Editor
+Which editor is mainly designed for non-technical Content Editor
 : Sitecore Experience Editor
 
 How to get data from xDB?
 : `xConnect`
 
-What is the us of Standard Template?
-: To store data that is hidden and use ofr an internal purpose
+What is the use of Standard Template?
+: To store data that is hidden and use for an internal purpose
 
-What is hte use of the Core Database?
+What is use of the Core Database?
 : Environment settings and Membership details
 
 Why Sitecore have Master and Web Database?
@@ -318,3 +318,4 @@ You have `Title` field in Event template and `Title` field in Article Template. 
 
 How does Sitecore knows you are a returning customer?
 : by calling `Identify()` method
+
