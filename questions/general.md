@@ -198,3 +198,123 @@ Why should you utilize Attach to Process in Visual Studio when working with Site
 
 When using TDS for Serialization, it is recommended that you pull all Sitecore items into your project.
 : False
+
+---
+## General
+What is the name of Component Architecture guideline of Sitecore?
+: Helix
+
+What is Horizontal scaling and Vertical Scaling?
+: - Vertical Scaling
+    - Add Resources to a single node in a system.
+  - Horizontal Scaling
+    - Adds more nodes to a system
+  
+Which databases is required for CD Server?
+: Web and Core
+
+What can be the reason `$token` is visible in one of the items as "`$token`" and not replace it with its value?
+: `$token` will replace by value for new items, not the old ones.
+
+Which `DLL` is required to get `RenderingContext`?
+: `Sitecore.MVC.Dll`
+
+What is the difference between `Shared` and `Final Layouts`?
+: - `Shared Layout`
+    - Controls which is added in the shared layout. is shared in all language and numbered versions
+  - `Final Layouts`
+    - Changes which is made in final layout are specific to the language and version.
+
+Which tag use in `Layers.config` file to define the sequence of execution of config files?
+: `<loadOrder>`
+
+How to force the content editor to create similar kind items under article?
+: Insert Option
+
+Which roles access right will take precedence?
+: `Deny`
+
+What is a difference between Smart, Republish and Incremental Publish?
+: - Incremental Publish
+    - Publishes only items that are in the publishing queue.
+  - Smart Publish
+    - Publishes all items that have changed since the last publication.
+  - Republish
+    - Publishes everything.
+
+What this code do `Sitecore.Globalization.Translate.Text("Title")`?
+: Gets phrase of dictionary key "Title"
+
+What is the difference `GetChildren()` vs `GetDescendants()`?
+: - `GetChildren()`
+    - Returns all direct children of an item
+  - `GetDescendants()`
+    - Returns all the items under an item
+
+What is a difference between `Treelist` and `TreelistEx`?
+: - `Treelist`
+    - always loads
+  - `TreelistEx`
+    - loads on demand
+
+Why we set icons in Sitecore?
+: To uniquely and easily identify the item
+
+**_What are the different tokens supported by Sitecore?_**: 
+| Token | Description |
+| :---: | --- |
+| `$name` | the name for the new item entered by the user |
+| `$id` | the ID of the new item |
+| `$parentid` | the ID of the parent of the new item |
+| `$parentname` | the name of the parent of the new item |
+| `$date` | the system date in `yyyymmdd` format |
+| `$time` | the system time in `HHmmss` format |
+| `$now` | the system date and time in `yyyyMMddTHHmmss` format |
+
+What are the different types of Databases available in Sitecore?
+: Master, Core, Web
+
+Which editor is mainly designed for no technical Content Editor
+: Sitecore Experience Editor
+
+How to get data from xDB?
+: `xConnect`
+
+What is the us of Standard Template?
+: To store data that is hidden and use ofr an internal purpose
+
+What is hte use of the Core Database?
+: Environment settings and Membership details
+
+Why Sitecore have Master and Web Database?
+: Changes in Master database in sandbox mode didn't affect LIVE website mode
+
+You have used `GroupBy` clause to get a result from the index, but you didn't get anything, why?
+: `GroupBy` clause is not supported by Sitecore search API
+
+**_Match the pair_**
+: - Sitecore products and modules download after 8.0 **->**  Sitecore developer Portal
+  - Sitecore videos **->**  Sitecore Youtube Channel
+  - Sitecore Products and modules download before 8.0 **->**  Sitecore Developer Network
+  - Raise tickets for issues **->**  support.sitecore.net
+
+Which field is editable inline in Experience Editor
+: Datetime
+
+How you find items in buckets?
+: Content Search API
+
+How to edit `Treelist` in Experience Editor?
+: Use edit frame and add buttons in toolbar
+
+How to do specify static component in cshtml file?
+: `@HTML.Sitecore().Renderings("Path or ID")`
+
+What is the use of Sitecore Packages?
+: to create `Zip` files that contain items and code files and to install it on some another Sitecore Instance
+
+You have `Title` field in Event template and `Title` field in Article Template. What you will do to follow the recommended approach?
+: Create a base template and inherit on both.
+
+How does Sitecore knows you are a returning customer?
+: by calling `Identify()` method
