@@ -1,5 +1,5 @@
 ## Prep QUIZ
-##
+
 **Q:** What are the types of publishing?
 
 **A:** Delayed, parallel an dedicated
