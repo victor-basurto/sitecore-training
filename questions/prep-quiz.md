@@ -200,3 +200,44 @@
 **Q:** What do you need to do to allow users to add and remove components from a placeholder using the Experience Editor?
 
 **A:** Create a Placeholder setting item for that placeholder.
+##
+**Q:** How can you make it easier to communicate issues with Sitecore Support?
+
+**A:** Use the Support Package Generator from the Sitecore Marketplace.
+##
+**Q:** To take advantage of Sitecore's integrated marketing & analytics capabilities, what do you need to implement?
+
+**A:** Experience Database
+##
+**Q:** What are the SIM installation features?
+
+**A:** Install any version of Sitecore from a repository of installers, Install modules and packages, Reinstall the same configuration.
+##
+**Q:** Why would you create the Visual Studio outside the webroot?
+
+**A:** The solution becomes more portable.
+##
+**Q:** When you are working with a Sitecore.Data.Items.Item object, which method should you use to get a list of all its children?
+
+**A:** .`GetChildren()`
+##
+**Q:** How to fix Layout not found error page?
+
+**A:** Define layout in the presentation details.
+##
+**Q:** What is the purpose of a Field Editor?
+
+**A:** To opens a pop up where fields are edited.
+##
+**Q:** How would you display the direct children of the Home item?
+
+**A:** Use `Sitecore.Context.Site.StartPath` and invoke `GetChildren()`
+##
+**Q:** Which of the following are the foundation pillars of a Web Content Management System?
+
+**A:** Data Definition, Content, Presentation
+
+##
+**Q:** What is a General Link field used for?
+
+**A:** To store the contents of an anchor tag.
